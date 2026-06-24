@@ -1,0 +1,15 @@
+# System files
+.git/
+.gitignore
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+*.tmp
+*.log

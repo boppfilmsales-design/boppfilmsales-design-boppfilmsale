@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图片加载测试</title>
+<style>
+body { font-family: Arial; padding: 20px; background: #1e0808; color: #fff; }
+.test-item { margin: 10px 0; padding: 10px; border: 1px solid #333; border-radius: 4px; }
+.test-item img { max-width: 100px; max-height: 100px; vertical-align: middle; margin-right: 10px; }
+.test-item .status { font-weight: bold; }
+.ok { color: #4caf50; }
+.fail { color: #f44336; }
+</style>
+</head>
+<body>
+<h1>BOPET 4.5Mic TTR Thermal Transfer Film - 图片加载测试</h1>
+<div id="results"></div>
+<script>
+const images = [
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/60f42a99dbe251973d9b9d19ced89c7.jpg",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/da4d17c9c4889f6d54c1e84231b7478.jpg",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/17c48216-2a39-48a8-897e-abf0618dc9aa.png",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/1706783598805.jpg",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/photo_2023-03-13_23-42-55.jpg",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/photo_2023-03-13_23-43-19.jpg",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/f04ae0f9edbd93e4162375442b5fa9c.png",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/4610caf56e231e8314fa3228d13ed6b.png",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/1fa7f7b2548c1b2d1224ceba4f9c5f7.png",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/0caea078d05bc74ca1213b439ee9186.png",
+  "images/BOPET 4.5Mic TTR Thermal Transfer Film/b994ef5c55f3403af8fc8a907c10415.png"
+];
+const results = document.getElementById('results');
+images.forEach((src, i) => {
+  const div = document.createElement('div');
+  div.className = 'test-item';
+  const img = new Image();
+  img.onload = () => {
+    div.innerHTML = `<img src="${src}" alt=""/><span class="status ok">✓ 加载成功</span> - ${src.split('/').pop()}`;
+  };
+  img.onerror = () => {
+    div.innerHTML = `<span class="status fail">✗ 加载失败</span> - ${src.split('/').pop()}<br><small style="color:#999">路径: ${src}</small>`;
+  };
+  img.src = src;
+  results.appendChild(div);
+});
+</script>
+</body>
+</html>
