@@ -1,136 +1,23 @@
 <!-- Floating Chatbot Widget -->
-<div id="chatbot-widget">
-  <!-- Chat Button -->
-  <button id="chatbot-toggle" onclick="toggleChat()" title="在线聊天 / Online Chat">
-    <span id="chatbot-icon">💬</span>
-    <span id="chatbot-label">在线客服</span>
-  </button>
-
-  <!-- Chat Panel -->
-  <div id="chatbot-panel" style="display:none">
-    <!-- Header -->
-    <div id="chatbot-header">
-      <span>🤖 智能客服 / AI Assistant</span>
-      <button onclick="toggleChat()" id="chatbot-close">✕</button>
-    </div>
-
-    <!-- Messages -->
-    <div id="chatbot-messages">
-      <div class="chat-msg bot">
-        <div class="chat-avatar">🤖</div>
-        <div class="chat-bubble">您好！我是AEC GROUP智能客服。有什么可以帮助您的吗？</div>
-      </div>
-      <div class="chat-msg bot">
-        <div class="chat-avatar">🤖</div>
-        <div class="chat-bubble">Hello! I'm AEC GROUP AI assistant. How can I help you today?</div>
-      </div>
-    </div>
-
-    <!-- Quick Questions -->
-    <div id="chatbot-quick">
-      <div class="quick-title">常见问题 / FAQ</div>
-      <button onclick="askQuestion('product')">📦 产品咨询</button>
+<!-- Messages -->
+    <div class="chat-bubble">您好！我是AEC GROUP智能客服。有什么可以帮助您的吗？</div></div><div class="chat-msg bot">
+        <div class="chat-avatar">🤖</div><div class="chat-bubble">Hello! I'm AEC GROUP AI assistant. How can I help you today?</div></div></div><!-- Quick Questions -->
+    <button onclick="askQuestion('product')">📦 产品咨询</button>
       <button onclick="askQuestion('price')">💰 价格报价</button>
       <button onclick="askQuestion('spec')">📊 技术参数</button>
       <button onclick="askQuestion('order')">🚚 订购交货</button>
       <button onclick="askQuestion('contact')">📞 联系方式</button>
-    </div>
-
-    <!-- Input -->
-    <div id="chatbot-input">
-      <input type="text" id="chatbot-text" placeholder="输入问题... / Type your question..." onkeypress="handleKeyPress(event)">
-      <button onclick="sendMessage()">➤</button>
-    </div>
-  </div>
-</div>
-
-<style>
-#chatbot-widget{
-  position:fixed;
-  right:20px;
-  bottom:80px;
-  z-index:10000;
-  font-family:'Inter',sans-serif;
-}
-
+    </div><!-- Input -->
+    </div></div><style>
 /* Toggle Button */
-#chatbot-toggle{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  padding:12px 20px;
-  background:linear-gradient(135deg,#2d3748,#1a202c);
-  border:none;
-  border-radius:30px;
-  color:#1a202c;
-  font-size:15px;
-  font-weight:600;
-  cursor:pointer;
-  box-shadow:0 4px 15px rgba(0,0,0,0.15);
-  transition:all .3s;
-}
-#chatbot-toggle:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 20px rgba(192,57,43,0.5);
-}
-#chatbot-icon{
-  font-size:20px;
-  animation:pulse 2s infinite;
-}
 @keyframes pulse{
   0%,100%{transform:scale(1)}
   50%{transform:scale(1.1)}
 }
 
 /* Chat Panel */
-#chatbot-panel{
-  position:absolute;
-  bottom:70px;
-  right:0;
-  width:360px;
-  max-height:500px;
-  background:#1a202cfff;
-  border:1px solid rgba(232,196,106,0.3);
-  border-radius:16px;
-  box-shadow:0 10px 40px rgba(0,0,0,0.5);
-  display:flex;
-  flex-direction:column;
-  overflow:hidden;
-}
-
 /* Header */
-#chatbot-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:14px 18px;
-  background:rgba(0,0,0,0.03);
-  border-bottom:1px solid rgba(232,196,106,0.15);
-  color:var(--gold);
-  font-size:15px;
-  font-weight:600;
-}
-#chatbot-close{
-  background:none;
-  border:none;
-  color:var(--slate);
-  font-size:16px;
-  cursor:pointer;
-  padding:4px 8px;
-  border-radius:4px;
-}
-#chatbot-close:hover{
-  background:rgba(255,255,255,0.1);
-  color:#1a202c;
-}
-
 /* Messages */
-#chatbot-messages{
-  flex:1;
-  padding:14px;
-  overflow-y:auto;
-  max-height:240px;
-}
 .chat-msg{
   display:flex;
   gap:8px;
@@ -174,10 +61,6 @@
 }
 
 /* Quick Questions */
-#chatbot-quick{
-  padding:10px 14px;
-  border-top:1px solid rgba(232,196,106,0.1);
-}
 .quick-title{
   font-size:15px;
   color:var(--slate);
@@ -185,79 +68,10 @@
   text-transform:uppercase;
   letter-spacing:0.05em;
 }
-#chatbot-quick button{
-  display:inline-block;
-  padding:6px 12px;
-  margin:3px;
-  background:rgba(232,196,106,0.08);
-  border:1px solid rgba(0,0,0,0.1);
-  border-radius:16px;
-  color:var(--ice);
-  font-size:15px;
-  cursor:pointer;
-  transition:all .2s;
-}
-#chatbot-quick button:hover{
-  background:rgba(0,0,0,0.03);
-  border-color:var(--gold);
-  color:var(--gold);
-}
-
 /* Input */
-#chatbot-input{
-  display:flex;
-  gap:8px;
-  padding:12px 14px;
-  border-top:1px solid rgba(232,196,106,0.1);
-}
-#chatbot-input input{
-  flex:1;
-  padding:10px 14px;
-  background:rgba(255,255,255,0.9);
-  border:1px solid rgba(0,0,0,0.1);
-  border-radius:20px;
-  color:var(--ice);
-  font-size:15px;
-  outline:none;
-}
-#chatbot-input input:focus{
-  border-color:var(--gold);
-}
-#chatbot-input input::placeholder{
-  color:var(--slate);
-}
-#chatbot-input button{
-  width:40px;
-  height:40px;
-  background:linear-gradient(135deg,var(--red),var(--red-light));
-  border:none;
-  border-radius:50%;
-  color:#1a202c;
-  font-size:16px;
-  cursor:pointer;
-  transition:all .2s;
-}
-#chatbot-input button:hover{
-  transform:scale(1.05);
-}
-
 /* Responsive */
 @media(max-width:680px){
-  #chatbot-widget{
-    right:10px;
-    bottom:70px;
   }
-  #chatbot-panel{
-    width:300px;
-    right:-10px;
-  }
-  #chatbot-label{
-    display:none;
-  }
-  #chatbot-toggle{
-    padding:12px;
-  }
-}
 </style>
 
 <script>
@@ -381,13 +195,6 @@ For urgent matters, please email sale@boppfilmsale.com or call +86 18919659471.`
   }
 };
 
-function toggleChat(){
-  const panel=document.getElementById('chatbot-panel');
-  const isVisible=panel.style.display!=='none';
-  panel.style.display=isVisible?'none':'flex';
-  if(!isVisible){
-    document.getElementById('chatbot-text').focus();
-  }
 }
 
 function addMessage(text,isUser){
@@ -395,9 +202,7 @@ function addMessage(text,isUser){
   const msgDiv=document.createElement('div');
   msgDiv.className='chat-msg '+(isUser?'user':'bot');
   msgDiv.innerHTML=`
-    <div class="chat-avatar">${isUser?'👤':'🤖'}</div>
-    <div class="chat-bubble">${text}</div>
-  `;
+    <div class="chat-avatar">${isUser?'👤':'🤖'}</div><div class="chat-bubble">${text}</div>`;
   messagesDiv.appendChild(msgDiv);
   messagesDiv.scrollTop=messagesDiv.scrollHeight;
 }
@@ -432,20 +237,13 @@ function sendMessage(){
   },500+Math.random()*1000);
 }
 
-function askQuestion(type){
-  const lang=localStorage.getItem('aec-lang')||'zh';
-  const question={
-    zh:{product:'我想了解产品',price:'请提供报价',spec:'查看技术参数',order:'如何订购',contact:'联系方式'},
+,
     en:{product:'I want to know about products',price:'Please provide a quote',spec:'View technical specs',order:'How to order',contact:'Contact information'}
   };
   document.getElementById('chatbot-text').value=question[type];
   sendMessage();
 }
 
-function handleKeyPress(event){
-  if(event.key==='Enter'){
-    sendMessage();
-  }
 }
 
 // Auto-greeting after 30 seconds

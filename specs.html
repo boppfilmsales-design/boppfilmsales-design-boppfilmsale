@@ -44,166 +44,31 @@ footer{background:transparent;border-top:1px solid var(--border);padding:52px 0 
 @media(max-width:760px){.fgrid{grid-template-columns:1fr 1fr}.fbot{flex-direction:column;text-align:center}.faddr{text-align:center}}
 /* Floating Contact Sidebar */.floating-contact{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:999;display:flex;flex-direction:column;gap:1px;box-shadow:-2px 0 10px rgba(0,0,0,.5)}.fc-item{display:flex;align-items:center;justify-content:center;width:48px;height:48px;background:transparent;border:1px solid var(--border);transition:all .2s;text-decoration:none;position:relative}.fc-item:first-child{border-radius:8px 0 0 0}.fc-item:last-child{border-radius:0 0 0 8px}.fc-item:hover{width:120px;border-color:var(--gold);background:var(--red)}.fc-icon{font-size:20px;flex-shrink:0}.fc-label{position:absolute;right:55px;white-space:nowrap;font-size:15px;color:var(--ice);opacity:0;transition:opacity .2s;pointer-events:none}.fc-item:hover .fc-label{opacity:1}@media(max-width:680px){.floating-contact{display:none}}
 </style></head><body><div class="filmstrip"><div class="fs-track"><span class="fs-hole"></span><span class="fs-txt">Bopp Film</span><span class="fs-hole"></span><span class="fs-txt">Bopet Film</span><span class="fs-hole"></span><span class="fs-txt">Cpp Film</span><span class="fs-hole"></span><span class="fs-txt">Pof Shrink Film</span><span class="fs-hole"></span><span class="fs-txt">Packing Tape</span><span class="fs-hole"></span><span class="fs-txt">AEC GROUP · HEFEI CHINA</span><span class="fs-hole"></span><span class="fs-txt">Tear Tape</span><span class="fs-hole"></span><span class="fs-txt">PVDC COATING · K FILM</span><span class="fs-hole"></span><span class="fs-txt">Bopp Film</span><span class="fs-hole"></span><span class="fs-txt">Bopet Film</span><span class="fs-hole"></span><span class="fs-txt">Bopp Film</span></div></div><header><div class="header-inner"><a href="index.html" class="logo"><div class="logo-main">Aec<span>Group</span></div><span class="logo-sub">Anhui Eastern Communication Imp. &amp; Exp.</span></a><nav><div class="nav-item"><a href="about.html">About / 关于</a></div><div class="nav-item"><a href="index.html">Products / 产品</a></div><div class="nav-item"><a href="specs.html" class="act">Specs / 规格</a></div><div class="nav-item"><a href="applications.html">Applications / 应用</a></div><div class="nav-item"><a href="why-us.html">Why Us / 优势</a></div><div class="nav-item"><a href="contact.html">Contact / 联系</a></div></nav>
-    <div class="lang-toggle"><select id="langSelect" onchange="setLang(this.value)"><option value="zh">中文</option><option value="en">English</option><option value="ar">العربية</option><option value="pt">Português</option><option value="es">Español</option><option value="ru">Русский</option></select></div>
-    <a href="contact.html" class="btn-gold">Get Quote 询价</a></div></header>
-<!-- Floating Contact Sidebar --><div class="floating-contact"><a href="https://wa.me/8618919654871" target="_blank" class="fc-item" title="WhatsApp"><svg class="fc-svg" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.099-.776.966-.966 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.226 5.096 6.196 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.226 2.096 3.226 0 0 3.096-.198 4.196-.297.198-.099.396-.148.594-.148.198 0 .57.075.792.372.297.297.297.694.297 1.04 0 .347-.099.694-.297.992-.198.297-.792.896-.99 1.194-.198.297-.396.347-.594.347-.198 0-.57.075-.792.372z"/></svg><span class="fc-label">WhatsApp</span></a><a href="tel:+8618919654871" class="fc-item" title="Mobile"><svg class="fc-svg" viewBox="0 0 24 24" fill="#4A90D9"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span class="fc-label">Mobile</span></a><a href="weixin://chat?18919654871" class="fc-item" title="WeChat"><svg class="fc-svg" viewBox="0 0 24 24" fill="#07C160"><path d="M8.5 11a1 1 0 100 2 1 1 0 000-2zm4 0a1 1 0 100 2 1 1 0 000-2zM12 2C6.48 2 2 5.82 2 10.5c0 2.72 1.4 5.14 3.6 6.78L5 20l3.18-1.68c.84.18 1.7.28 2.62.3.17 0 .33-.01.5-.02-.1-.32-.15-.66-.15-1 0-3.87 3.13-7 7-7 .34 0 .68.03 1.02.08C18.18 5.18 15.44 2 12 2z"/></svg><span class="fc-label">WeChat</span></a><a href="mailto:sale@boppfilmsale.com" class="fc-item" title="Email"><svg class="fc-svg" viewBox="0 0 24 24" fill="#E74C3C"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span class="fc-label">Email</span></a></div>
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#products">Products</a> / <span>Specifications · 技术规格</span></div>
+    <div class="lang-toggle"><select id="langSelect" onchange="setLang(this.value)"><option value="zh">中文</option><option value="en">English</option><option value="ar">العربية</option><option value="pt">Português</option><option value="es">Español</option><option value="ru">Русский</option></select></div><a href="contact.html" class="btn-gold">Get Quote 询价</a></div></header>
+<!-- Floating Contact Sidebar --><div class="floating-contact"><a href="https://wa.me/8618919654871" target="_blank" class="fc-item" title="WhatsApp"><svg class="fc-svg" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.099-.776.966-.966 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.226 5.096 6.196 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.226 2.096 3.226 0 0 3.096-.198 4.196-.297.198-.099.396-.148.594-.148.198 0 .57.075.792.372.297.297.297.694.297 1.04 0 .347-.099.694-.297.992-.198.297-.792.896-.99 1.194-.198.297-.396.347-.594.347-.198 0-.57.075-.792.372z"/></svg><span class="fc-label">WhatsApp</span></a><a href="tel:+8618919654871" class="fc-item" title="Mobile"><svg class="fc-svg" viewBox="0 0 24 24" fill="#4A90D9"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span class="fc-label">Mobile</span></a><a href="weixin://chat?18919654871" class="fc-item" title="WeChat"><svg class="fc-svg" viewBox="0 0 24 24" fill="#07C160"><path d="M8.5 11a1 1 0 100 2 1 1 0 000-2zm4 0a1 1 0 100 2 1 1 0 000-2zM12 2C6.48 2 2 5.82 2 10.5c0 2.72 1.4 5.14 3.6 6.78L5 20l3.18-1.68c.84.18 1.7.28 2.62.3.17 0 .33-.01.5-.02-.1-.32-.15-.66-.15-1 0-3.87 3.13-7 7-7 .34 0 .68.03 1.02.08C18.18 5.18 15.44 2 12 2z"/></svg><span class="fc-label">WeChat</span></a><a href="mailto:sale@boppfilmsale.com" class="fc-item" title="Email"><svg class="fc-svg" viewBox="0 0 24 24" fill="#E74C3C"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span class="fc-label">Email</span></a></div><div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#products">Products</a> / <span>Specifications · 技术规格</span></div><section style="background:var(--bg)"><div class="container"><div class="sec-label">Technical Specifications · 技术规格</div><h2 class="sec-title">Film Specifications</h2><div class="sec-zh">薄膜产品完整技术参数表</div><p class="sec-desc">Comprehensive technical parameters for all major film grades. All products available in custom specifications. 涵盖所有主要产品类型的详细技术参数，所有产品均可按客户要求定制规格。</p>
 
-<section style="background:var(--bg)"><div class="container"><div class="sec-label">Technical Specifications · 技术规格</div><h2 class="sec-title">Film Specifications</h2><div class="sec-zh">薄膜产品完整技术参数表</div><p class="sec-desc">Comprehensive technical parameters for all major film grades. All products available in custom specifications. 涵盖所有主要产品类型的详细技术参数，所有产品均可按客户要求定制规格。</p>
+<div class="cat-section" id="bopp-plain"><div class="cat-title">BOPP Plain Film · BOPP普通薄膜</div><div class="cat-subtitle">Thickness 3–75μm · Width 250–10,000mm</div><p class="cat-desc">Bi-axially oriented polypropylene film manufactured via casting sheet extrusion and biaxial orientation. Excellent clarity, mechanical strength, and dimensional stability. Surface can be corona-treated on one or both sides for ink adhesion. Widely used in carton box overwrap, printing, lamination, food packaging, CD/DVD sleeves and general flexible packaging. 通过流延挤出和双向拉伸工艺生产的双向拉伸聚丙烯薄膜，具有优异的透明度、机械强度和尺寸稳定性。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>3 – 75</td><td>GB/T 13950</td></tr><tr><td>Tensile Strength MD · 纵向拉伸强度</td><td>N/15mm</td><td>≥ 10</td><td>GB/T 1040</td></tr><tr><td>Tensile Strength TD · 横向拉伸强度</td><td>N/15mm</td><td>≥ 8</td><td>GB/T 1040</td></tr><tr><td>Elongation at Break MD · 断裂伸长率</td><td>%</td><td>50 – 200</td><td>GB/T 1040</td></tr><tr><td>Haze · 雾度</td><td>%</td><td>≤ 1.5</td><td>GB/T 2410</td></tr><tr><td>Gloss (45°) · 光泽度</td><td>Gu</td><td>≥ 85</td><td>GB/T 8807</td></tr><tr><td>Surface Tension · 表面张力</td><td>mN/m</td><td>≥ 38</td><td>GB/T 14216</td></tr><tr><td>Width Range · 幅宽</td><td>mm</td><td>250 – 10,000</td><td>Custom</td></tr><tr><td>Core Diameter · 纸芯</td><td>inch</td><td>1″ / 2″ / 3″ / 6″</td><td>Standard</td></tr><tr><td>Roll Length · 卷长</td><td>m</td><td>200 – 8,000</td><td>Custom</td></tr></tbody></table></div><div class="cat-section" id="bopp-heatseal"><div class="cat-title">BOPP Heat Sealable Film · BOPP热封薄膜</div><div class="cat-subtitle">Seal Temp 100–140°C · One/Two-side</div><p class="cat-desc">Co-extruded multilayer BOPP film with heat-seal layer engineered for low initiation temperature and strong, consistent seals on automated form-fill-seal and wrapping lines. Excellent hot-tack strength prevents seal failure during high-speed production. 共挤多层BOPP薄膜，热封层经特殊设计，具有较低的起封温度和优异的热封强度。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>15 — 40</td><td>—</td></tr><tr><td>Heat Seal Temperature · 热封温度</td><td>°C</td><td>100 – 140</td><td>—</td></tr><tr><td>Heat Seal Strength · 热封强度</td><td>N/15mm</td><td>≥ 3 (120°C, 0.3MPa, 1s)</td><td>—</td></tr><tr><td>Coefficient of Friction · 摩擦系数</td><td>—</td><td>0.1 – 0.3</td><td>—</td></tr><tr><td>Haze · 雾度</td><td>%</td><td>≤ 2.5</td><td>—</td></tr><tr><td>MVTR · 水蒸气透过率</td><td>g/m²·24h</td><td>≤ 4 (38°C, 90%RH)</td><td>—</td></tr><tr><td>Sealing Configuration · 封合形式</td><td>—</td><td>One-side / Two-side</td><td>—</td></tr></tbody></table></div><div class="cat-section" id="bopp-pearlized"><div class="cat-title">BOPP Pearlized Film · BOPP珠光薄膜</div><div class="cat-subtitle">Density 0.55–0.75 g/cm³ · Opacity ≥75%</div><p class="cat-desc">White opaque co-extruded BOPP film with micro-voided core layer creating distinctive pearlescent luster similar to coated paper, but with superior moisture resistance and lower density. Heat sealable on both sides with one-side corona treatment. Built-in antistatic properties. 白色不透明共挤BOPP薄膜，内含微孔发泡芯层，具有独特的珠光光泽。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>20 – 50</td><td>—</td></tr><tr><td>Density · 密度</td><td>g/cm³</td><td>0.55 – 0.75</td><td>—</td></tr><tr><td>Opacity · 不透明度</td><td>%</td><td>≥ 75</td><td>—</td></tr><tr><td>Gloss (45°) · 光泽度</td><td>Gu</td><td>60 – 110</td><td>—</td></tr><tr><td>Heat Seal · 热封</td><td>—</td><td>Both sides</td><td>—</td></tr><tr><td>Surface Resistance · 表面电阻</td><td>Ω</td><td>≤ 10¹¹</td><td>—</td></tr></tbody></table></div><div class="cat-section" id="bopet-clear"><div class="cat-title">BOPET Clear Film · BOPET透明薄膜</div><div class="cat-subtitle">Thickness 4.5–350μm · Tensile ≥150MPa</div><p class="cat-desc">High-clarity biaxially oriented polyester (PET) film offering outstanding mechanical strength, dimensional stability and chemical resistance far exceeding polyolefin films. Used as structural layer in multi-ply flexible packaging laminates and stand-alone film for technical applications. 高透明双向拉伸聚酯薄膜，具有远超聚烯烃薄膜的机械强度、尺寸稳定性和耐化学性。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>4.5 – 350</td><td>GB/T 16958</td></tr><tr><td>Tensile Strength</td><td>MPa</td><td>≥ 150</td><td>GB/T 1040</td></tr><tr><td>Haze · 雾度</td><td>%</td><td>≤ 3</td><td>GB/T 2410</td></tr><tr><td>Light Transmittance · 透光率</td><td>%</td><td>≥ 87</td><td>GB/T 2410</td></tr><tr><td>Thermal Shrinkage MD (150°C)</td><td>%</td><td>≤ 1.5</td><td>GB/T 12027</td></tr><tr><td>O₂ Transmission Rate</td><td>cm³/m²·24h·atm</td><td>50 – 150</td><td>—</td></tr><tr><td>Width Range · 幅宽</td><td>mm</td><td>250 – 5,000</td><td>—</td></tr></tbody></table></div><div class="cat-section" id="cpp-film"><div class="cat-title">CPP Film · CPP流延聚丙烯薄膜</div><div class="cat-subtitle">Thickness 20–80μm · Retort Grade 121°C</div><p class="cat-desc">Cast polypropylene film with excellent transparency, reliable heat-sealing and good moisture barrier performance. Available in general-purpose grades for everyday flexible packaging and retort-resistant grades capable of withstanding 121°C sterilization for shelf-stable food pouches. 流延聚丙烯薄膜，具有优异透明度、可靠热封性和良好防潮性。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>20 – 80</td><td>—</td></tr><tr><td>Tensile Strength MD</td><td>N/15mm</td><td>≥ 20</td><td>GB/T 1040</td></tr><tr><td>Heat Seal Temperature</td><td>°C</td><td>120 – 160</td><td>—</td></tr><tr><td>MVTR · 水蒸气阻隔</td><td>g/m²·24h</td><td>≤ 8</td><td>—</td></tr><tr><td>Haze · 雾度</td><td>%</td><td>≤ 5</td><td>—</td></tr><tr><td>Retort Grade · 蒸煮级</td><td>—</td><td>Available, 121°C</td><td>—</td></tr><tr><td>Width Range · 幅宽</td><td>mm</td><td>200 – 6,000</td><td>—</td></tr></tbody></table></div><div class="cat-section" id="pof-shrink"><div class="cat-title">POF Shrink Film · POF热缩薄膜</div><div class="cat-subtitle">High Clarity · High Shrink Ratio · FDA Compliant</div><p class="cat-desc">Polyolefin (POF) shrink film combining excellent optical clarity with high shrink ratio and strong, reliable seals across a wide sealing temperature window. Widely adopted as replacement for PVC shrink film due to superior environmental and food-safety profile. FDA-compliant grades available. 聚烯烃收缩膜，兼具优异光学透明度和高收缩率。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Optical Clarity · 透明度</td><td>—</td><td>High clarity</td><td>—</td></tr><tr><td>Shrink Ratio · 收缩率</td><td>—</td><td>High shrinkage</td><td>—</td></tr><tr><td>Seal Strength · 封合强度</td><td>—</td><td>Strong, reliable</td><td>—</td></tr><tr><td>FDA Compliance · FDA合规</td><td>—</td><td>Compliant grades available</td><td>—</td></tr><tr><td>Shrink Temp · 收缩温度</td><td>°C</td><td>90 – 130</td><td>—</td></tr><tr><td>Width Range · 幅宽</td><td>mm</td><td>100 – 2,000</td><td>—</td></tr></tbody></table></div><div class="cat-section" id="pvdc-kfilm"><div class="cat-title">PVDC Coating Film (K Film) · PVDC涂层薄膜</div><div class="cat-subtitle">Exceptional Gas & Moisture Barrier</div><p class="cat-desc">BOPP, BOPA or BOPET base film coated with PVDC resin, dramatically improving gas, moisture and aroma barrier performance. Widely known as "K film" or "KOP/KPET". The go-to solution for extending shelf life of moisture- and oxygen-sensitive products. BOPP、BOPA或BOPET基膜涂覆PVDC树脂，显著提升阻气、阻湿及保香性能。业内称为"K膜"。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Base Film Options · 基材</td><td>—</td><td>BOPP / BOPA / BOPET</td><td>—</td></tr><tr><td>Width · 幅宽</td><td>mm</td><td>120 – 1,500</td><td>—</td></tr><tr><td>Length · 卷长</td><td>m</td><td>200 – 4,000</td><td>—</td></tr><tr><td>Core Size · 纸芯</td><td>inch</td><td>1″ – 6″</td><td>—</td></tr><tr><td>Gas Barrier · 阻气性</td><td>—</td><td>Excellent (O₂ & CO₂)</td><td>—</td></tr><tr><td>Aroma Preservation · 保香性</td><td>—</td><td>Excellent</td><td>—</td></tr><tr><td>Moisture Barrier · 阻湿性</td><td>—</td><td>High</td><td>—</td></tr></tbody></table></div><div class="cat-section" id="bopp-capacitor"><div class="cat-title">BOPP Capacitor Film · BOPP电容器薄膜</div><div class="cat-subtitle">Thickness 3–18μm · High Dielectric Strength</div><p class="cat-desc">Ultra-thin, high-purity BOPP film vacuum-metallized with zinc/aluminum or pure aluminum to form dielectric and electrode layers inside film capacitors. Manufactured to extremely tight thickness tolerances with reinforced edge margins. Two types: clear capacitor film (M-PP, S-PP) and rough capacitor film (R-PP, RR-PP). 超薄高纯度BOPP薄膜，经真空镀铝处理，形成薄膜电容器内部的介质层及电极层。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>3 – 18</td><td>—</td></tr><tr><td>Metallization · 镀层</td><td>—</td><td>Zn/Al or pure Al</td><td>—</td></tr><tr><td>Reinforced Edge · 加厚边</td><td>mm</td><td>1.5 / 2.0 / 2.5</td><td>—</td></tr><tr><td>Dielectric Strength · 击穿强度</td><td>V/μm</td><td>≥ 500</td><td>—</td></tr><tr><td>Dissipation Factor · 介电损耗</td><td>—</td><td>≤ 2×10⁻⁴</td><td>—</td></tr><tr><td>Volume Resistivity · 体积电阻率</td><td>Ω·m</td><td>≥ 10¹⁵</td><td>—</td></tr></tbody></table></div></div></section>
 
-<div class="cat-section" id="bopp-plain"><div class="cat-title">BOPP Plain Film · BOPP普通薄膜</div><div class="cat-subtitle">Thickness 3–75μm · Width 250–10,000mm</div><p class="cat-desc">Bi-axially oriented polypropylene film manufactured via casting sheet extrusion and biaxial orientation. Excellent clarity, mechanical strength, and dimensional stability. Surface can be corona-treated on one or both sides for ink adhesion. Widely used in carton box overwrap, printing, lamination, food packaging, CD/DVD sleeves and general flexible packaging. 通过流延挤出和双向拉伸工艺生产的双向拉伸聚丙烯薄膜，具有优异的透明度、机械强度和尺寸稳定性。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>3 – 75</td><td>GB/T 13950</td></tr><tr><td>Tensile Strength MD · 纵向拉伸强度</td><td>N/15mm</td><td>≥ 10</td><td>GB/T 1040</td></tr><tr><td>Tensile Strength TD · 横向拉伸强度</td><td>N/15mm</td><td>≥ 8</td><td>GB/T 1040</td></tr><tr><td>Elongation at Break MD · 断裂伸长率</td><td>%</td><td>50 – 200</td><td>GB/T 1040</td></tr><tr><td>Haze · 雾度</td><td>%</td><td>≤ 1.5</td><td>GB/T 2410</td></tr><tr><td>Gloss (45°) · 光泽度</td><td>Gu</td><td>≥ 85</td><td>GB/T 8807</td></tr><tr><td>Surface Tension · 表面张力</td><td>mN/m</td><td>≥ 38</td><td>GB/T 14216</td></tr><tr><td>Width Range · 幅宽</td><td>mm</td><td>250 – 10,000</td><td>Custom</td></tr><tr><td>Core Diameter · 纸芯</td><td>inch</td><td>1″ / 2″ / 3″ / 6″</td><td>Standard</td></tr><tr><td>Roll Length · 卷长</td><td>m</td><td>200 – 8,000</td><td>Custom</td></tr></tbody></table></div>
-
-<div class="cat-section" id="bopp-heatseal"><div class="cat-title">BOPP Heat Sealable Film · BOPP热封薄膜</div><div class="cat-subtitle">Seal Temp 100–140°C · One/Two-side</div><p class="cat-desc">Co-extruded multilayer BOPP film with heat-seal layer engineered for low initiation temperature and strong, consistent seals on automated form-fill-seal and wrapping lines. Excellent hot-tack strength prevents seal failure during high-speed production. 共挤多层BOPP薄膜，热封层经特殊设计，具有较低的起封温度和优异的热封强度。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>15 — 40</td><td>—</td></tr><tr><td>Heat Seal Temperature · 热封温度</td><td>°C</td><td>100 – 140</td><td>—</td></tr><tr><td>Heat Seal Strength · 热封强度</td><td>N/15mm</td><td>≥ 3 (120°C, 0.3MPa, 1s)</td><td>—</td></tr><tr><td>Coefficient of Friction · 摩擦系数</td><td>—</td><td>0.1 – 0.3</td><td>—</td></tr><tr><td>Haze · 雾度</td><td>%</td><td>≤ 2.5</td><td>—</td></tr><tr><td>MVTR · 水蒸气透过率</td><td>g/m²·24h</td><td>≤ 4 (38°C, 90%RH)</td><td>—</td></tr><tr><td>Sealing Configuration · 封合形式</td><td>—</td><td>One-side / Two-side</td><td>—</td></tr></tbody></table></div>
-
-<div class="cat-section" id="bopp-pearlized"><div class="cat-title">BOPP Pearlized Film · BOPP珠光薄膜</div><div class="cat-subtitle">Density 0.55–0.75 g/cm³ · Opacity ≥75%</div><p class="cat-desc">White opaque co-extruded BOPP film with micro-voided core layer creating distinctive pearlescent luster similar to coated paper, but with superior moisture resistance and lower density. Heat sealable on both sides with one-side corona treatment. Built-in antistatic properties. 白色不透明共挤BOPP薄膜，内含微孔发泡芯层，具有独特的珠光光泽。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>20 – 50</td><td>—</td></tr><tr><td>Density · 密度</td><td>g/cm³</td><td>0.55 – 0.75</td><td>—</td></tr><tr><td>Opacity · 不透明度</td><td>%</td><td>≥ 75</td><td>—</td></tr><tr><td>Gloss (45°) · 光泽度</td><td>Gu</td><td>60 – 110</td><td>—</td></tr><tr><td>Heat Seal · 热封</td><td>—</td><td>Both sides</td><td>—</td></tr><tr><td>Surface Resistance · 表面电阻</td><td>Ω</td><td>≤ 10¹¹</td><td>—</td></tr></tbody></table></div>
-
-<div class="cat-section" id="bopet-clear"><div class="cat-title">BOPET Clear Film · BOPET透明薄膜</div><div class="cat-subtitle">Thickness 4.5–350μm · Tensile ≥150MPa</div><p class="cat-desc">High-clarity biaxially oriented polyester (PET) film offering outstanding mechanical strength, dimensional stability and chemical resistance far exceeding polyolefin films. Used as structural layer in multi-ply flexible packaging laminates and stand-alone film for technical applications. 高透明双向拉伸聚酯薄膜，具有远超聚烯烃薄膜的机械强度、尺寸稳定性和耐化学性。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>4.5 – 350</td><td>GB/T 16958</td></tr><tr><td>Tensile Strength</td><td>MPa</td><td>≥ 150</td><td>GB/T 1040</td></tr><tr><td>Haze · 雾度</td><td>%</td><td>≤ 3</td><td>GB/T 2410</td></tr><tr><td>Light Transmittance · 透光率</td><td>%</td><td>≥ 87</td><td>GB/T 2410</td></tr><tr><td>Thermal Shrinkage MD (150°C)</td><td>%</td><td>≤ 1.5</td><td>GB/T 12027</td></tr><tr><td>O₂ Transmission Rate</td><td>cm³/m²·24h·atm</td><td>50 – 150</td><td>—</td></tr><tr><td>Width Range · 幅宽</td><td>mm</td><td>250 – 5,000</td><td>—</td></tr></tbody></table></div>
-
-<div class="cat-section" id="cpp-film"><div class="cat-title">CPP Film · CPP流延聚丙烯薄膜</div><div class="cat-subtitle">Thickness 20–80μm · Retort Grade 121°C</div><p class="cat-desc">Cast polypropylene film with excellent transparency, reliable heat-sealing and good moisture barrier performance. Available in general-purpose grades for everyday flexible packaging and retort-resistant grades capable of withstanding 121°C sterilization for shelf-stable food pouches. 流延聚丙烯薄膜，具有优异透明度、可靠热封性和良好防潮性。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>20 – 80</td><td>—</td></tr><tr><td>Tensile Strength MD</td><td>N/15mm</td><td>≥ 20</td><td>GB/T 1040</td></tr><tr><td>Heat Seal Temperature</td><td>°C</td><td>120 – 160</td><td>—</td></tr><tr><td>MVTR · 水蒸气阻隔</td><td>g/m²·24h</td><td>≤ 8</td><td>—</td></tr><tr><td>Haze · 雾度</td><td>%</td><td>≤ 5</td><td>—</td></tr><tr><td>Retort Grade · 蒸煮级</td><td>—</td><td>Available, 121°C</td><td>—</td></tr><tr><td>Width Range · 幅宽</td><td>mm</td><td>200 – 6,000</td><td>—</td></tr></tbody></table></div>
-
-<div class="cat-section" id="pof-shrink"><div class="cat-title">POF Shrink Film · POF热缩薄膜</div><div class="cat-subtitle">High Clarity · High Shrink Ratio · FDA Compliant</div><p class="cat-desc">Polyolefin (POF) shrink film combining excellent optical clarity with high shrink ratio and strong, reliable seals across a wide sealing temperature window. Widely adopted as replacement for PVC shrink film due to superior environmental and food-safety profile. FDA-compliant grades available. 聚烯烃收缩膜，兼具优异光学透明度和高收缩率。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Optical Clarity · 透明度</td><td>—</td><td>High clarity</td><td>—</td></tr><tr><td>Shrink Ratio · 收缩率</td><td>—</td><td>High shrinkage</td><td>—</td></tr><tr><td>Seal Strength · 封合强度</td><td>—</td><td>Strong, reliable</td><td>—</td></tr><tr><td>FDA Compliance · FDA合规</td><td>—</td><td>Compliant grades available</td><td>—</td></tr><tr><td>Shrink Temp · 收缩温度</td><td>°C</td><td>90 – 130</td><td>—</td></tr><tr><td>Width Range · 幅宽</td><td>mm</td><td>100 – 2,000</td><td>—</td></tr></tbody></table></div>
-
-<div class="cat-section" id="pvdc-kfilm"><div class="cat-title">PVDC Coating Film (K Film) · PVDC涂层薄膜</div><div class="cat-subtitle">Exceptional Gas & Moisture Barrier</div><p class="cat-desc">BOPP, BOPA or BOPET base film coated with PVDC resin, dramatically improving gas, moisture and aroma barrier performance. Widely known as "K film" or "KOP/KPET". The go-to solution for extending shelf life of moisture- and oxygen-sensitive products. BOPP、BOPA或BOPET基膜涂覆PVDC树脂，显著提升阻气、阻湿及保香性能。业内称为"K膜"。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Base Film Options · 基材</td><td>—</td><td>BOPP / BOPA / BOPET</td><td>—</td></tr><tr><td>Width · 幅宽</td><td>mm</td><td>120 – 1,500</td><td>—</td></tr><tr><td>Length · 卷长</td><td>m</td><td>200 – 4,000</td><td>—</td></tr><tr><td>Core Size · 纸芯</td><td>inch</td><td>1″ – 6″</td><td>—</td></tr><tr><td>Gas Barrier · 阻气性</td><td>—</td><td>Excellent (O₂ & CO₂)</td><td>—</td></tr><tr><td>Aroma Preservation · 保香性</td><td>—</td><td>Excellent</td><td>—</td></tr><tr><td>Moisture Barrier · 阻湿性</td><td>—</td><td>High</td><td>—</td></tr></tbody></table></div>
-
-<div class="cat-section" id="bopp-capacitor"><div class="cat-title">BOPP Capacitor Film · BOPP电容器薄膜</div><div class="cat-subtitle">Thickness 3–18μm · High Dielectric Strength</div><p class="cat-desc">Ultra-thin, high-purity BOPP film vacuum-metallized with zinc/aluminum or pure aluminum to form dielectric and electrode layers inside film capacitors. Manufactured to extremely tight thickness tolerances with reinforced edge margins. Two types: clear capacitor film (M-PP, S-PP) and rough capacitor film (R-PP, RR-PP). 超薄高纯度BOPP薄膜，经真空镀铝处理，形成薄膜电容器内部的介质层及电极层。</p><table class="spec-table"><thead><tr><th>Parameter · 参数</th><th>Unit</th><th>Value / Range</th><th>Standard</th></tr></thead><tbody><tr><td>Thickness · 厚度</td><td>μm</td><td>3 – 18</td><td>—</td></tr><tr><td>Metallization · 镀层</td><td>—</td><td>Zn/Al or pure Al</td><td>—</td></tr><tr><td>Reinforced Edge · 加厚边</td><td>mm</td><td>1.5 / 2.0 / 2.5</td><td>—</td></tr><tr><td>Dielectric Strength · 击穿强度</td><td>V/μm</td><td>≥ 500</td><td>—</td></tr><tr><td>Dissipation Factor · 介电损耗</td><td>—</td><td>≤ 2×10⁻⁴</td><td>—</td></tr><tr><td>Volume Resistivity · 体积电阻率</td><td>Ω·m</td><td>≥ 10¹⁵</td><td>—</td></tr></tbody></table></div>
-
-</div></section>
-
-<div class="contact-strip"><div class="contact-inner"><div class="contact-text">Need custom specifications? <b>Contact our technical team</b> for tailored solutions.<br/>需要定制规格？请联系我们的技术团队获取定制方案。</div><div class="contact-links"><a href="mailto:sale@boppfilmsale.com">sale@boppfilmsale.com</a><a href="tel:+8618919659471">+86 18919659471</a><a href="contact.html">Contact →</a></div></div></div>
-
-<footer><div class="container"><div class="fgrid"><div><div class="flogo">Aec<span>Group</span></div><div class="ftagline">Anhui Eastern Communication Imp. &amp; Exp. Co., Ltd.<br/>安徽东渐进出口有限公司</div></div><div><div class="fh">Products</div><ul class="flinks"><li><a href="bopp.html">BOPP Film</a></li><li><a href="bopet.html">BOPET Film</a></li><li><a href="coating.html">Coating Film</a></li><li><a href="tape.html">Packing Tape</a></li><li><a href="tear.html">Tear Tape</a></li></ul></div><div><div class="fh">Company</div><ul class="flinks"><li><a href="about.html">About Us</a></li><li><a href="specs.html">Specifications</a></li><li><a href="applications.html">Applications</a></li><li><a href="why-us.html">Why AEC</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><div class="fh">Contact</div><ul class="flinks"><li><a href="mailto:sale@boppfilmsale.com">sale@boppfilmsale.com</a></li><li><a href="tel:+8618919659471">+86 18919659471</a></li><li>QQ: 2538474128</li><li>WeChat: 18919659471</li></ul></div></div><div class="fbot"><div class="fcopy">© 2026 AEC GROUP · <a href="https://www.boppfilmsale.com">boppfilmsale.com</a></div><div class="faddr">No.1158 Huizhou Ave., Baohe Industrial Dist., Hefei, Anhui 230051</div></div></div></footer><script src="translations.js"></script><script>var currentLang=localStorage.getItem('aec-lang')||'zh';function setLang(l){currentLang=l;localStorage.setItem('aec-lang',l);document.documentElement.lang=l;if(l==='ar'){document.documentElement.dir='rtl'}else{document.documentElement.dir='ltr'}var s=document.getElementById('langSelect');if(s)s.value=l}setLang(currentLang);</script><!-- Floating Chatbot Widget -->
-<div id="chatbot-widget">
-  <!-- Chat Button -->
-  <button id="chatbot-toggle" onclick="toggleChat()" title="在线聊天 / Online Chat">
-    <span id="chatbot-icon">💬</span>
-    <span id="chatbot-label">在线客服</span>
-  </button>
-
-  <!-- Chat Panel -->
-  <div id="chatbot-panel" style="display:none">
-    <!-- Header -->
-    <div id="chatbot-header">
-      <span>🤖 智能客服 / AI Assistant</span>
-      <button onclick="toggleChat()" id="chatbot-close">✕</button>
-    </div>
-
-    <!-- Messages -->
-    <div id="chatbot-messages">
-      <div class="chat-msg bot">
-        <div class="chat-avatar">🤖</div>
-        <div class="chat-bubble">您好！我是AEC GROUP智能客服。有什么可以帮助您的吗？</div>
-      </div>
-      <div class="chat-msg bot">
-        <div class="chat-avatar">🤖</div>
-        <div class="chat-bubble">Hello! I'm AEC GROUP AI assistant. How can I help you today?</div>
-      </div>
-    </div>
-
-    <!-- Quick Questions -->
-    <div id="chatbot-quick">
-      <div class="quick-title">常见问题 / FAQ</div>
-      <button onclick="askQuestion('product')">📦 产品咨询</button>
+<div class="contact-strip"><div class="contact-inner"><div class="contact-text">Need custom specifications? <b>Contact our technical team</b> for tailored solutions.<br/>需要定制规格？请联系我们的技术团队获取定制方案。</div><div class="contact-links"><a href="mailto:sale@boppfilmsale.com">sale@boppfilmsale.com</a><a href="tel:+8618919659471">+86 18919659471</a><a href="contact.html">Contact →</a></div></div></div><footer><div class="container"><div class="fgrid"><div><div class="flogo">Aec<span>Group</span></div><div class="ftagline">Anhui Eastern Communication Imp. &amp; Exp. Co., Ltd.<br/>安徽东渐进出口有限公司</div></div><div><div class="fh">Products</div><ul class="flinks"><li><a href="bopp.html">BOPP Film</a></li><li><a href="bopet.html">BOPET Film</a></li><li><a href="coating.html">Coating Film</a></li><li><a href="tape.html">Packing Tape</a></li><li><a href="tear.html">Tear Tape</a></li></ul></div><div><div class="fh">Company</div><ul class="flinks"><li><a href="about.html">About Us</a></li><li><a href="specs.html">Specifications</a></li><li><a href="applications.html">Applications</a></li><li><a href="why-us.html">Why AEC</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><div class="fh">Contact</div><ul class="flinks"><li><a href="mailto:sale@boppfilmsale.com">sale@boppfilmsale.com</a></li><li><a href="tel:+8618919659471">+86 18919659471</a></li><li>QQ: 2538474128</li><li>WeChat: 18919659471</li></ul></div></div><div class="fbot"><div class="fcopy">© 2026 AEC GROUP · <a href="https://www.boppfilmsale.com">boppfilmsale.com</a></div><div class="faddr">No.1158 Huizhou Ave., Baohe Industrial Dist., Hefei, Anhui 230051</div></div></div></footer><script src="translations.js"></script><script>var currentLang=localStorage.getItem('aec-lang')||'zh';function setLang(l){currentLang=l;localStorage.setItem('aec-lang',l);document.documentElement.lang=l;if(l==='ar'){document.documentElement.dir='rtl'}else{document.documentElement.dir='ltr'}var s=document.getElementById('langSelect');if(s)s.value=l}setLang(currentLang);</script><!-- Floating Chatbot Widget -->
+<!-- Messages -->
+    <div class="chat-bubble">您好！我是AEC GROUP智能客服。有什么可以帮助您的吗？</div></div><div class="chat-msg bot">
+        <div class="chat-avatar">🤖</div><div class="chat-bubble">Hello! I'm AEC GROUP AI assistant. How can I help you today?</div></div></div><!-- Quick Questions -->
+    <button onclick="askQuestion('product')">📦 产品咨询</button>
       <button onclick="askQuestion('price')">💰 价格报价</button>
       <button onclick="askQuestion('spec')">📊 技术参数</button>
       <button onclick="askQuestion('order')">🚚 订购交货</button>
       <button onclick="askQuestion('contact')">📞 联系方式</button>
-    </div>
-
-    <!-- Input -->
-    <div id="chatbot-input">
-      <input type="text" id="chatbot-text" placeholder="输入问题... / Type your question..." onkeypress="handleKeyPress(event)">
-      <button onclick="sendMessage()">➤</button>
-    </div>
-  </div>
-</div>
-
-<style>
-#chatbot-widget{
-  position:fixed;
-  right:20px;
-  bottom:80px;
-  z-index:10000;
-  font-family:'Inter',sans-serif;
-}
-
+    </div><!-- Input -->
+    </div></div><style>
 /* Toggle Button */
-#chatbot-toggle{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  padding:12px 20px;
-  background:linear-gradient(135deg,#2d3748,#1a202c);
-  border:none;
-  border-radius:30px;
-  color:#1a202c;
-  font-size:15px;
-  font-weight:600;
-  cursor:pointer;
-  box-shadow:0 4px 15px rgba(0,0,0,0.15);
-  transition:all .3s;
-}
-#chatbot-toggle:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 20px rgba(192,57,43,0.5);
-}
-#chatbot-icon{
-  font-size:20px;
-  animation:pulse 2s infinite;
-}
 @keyframes pulse{
   0%,100%{transform:scale(1)}
   50%{transform:scale(1.1)}
 }
 
 /* Chat Panel */
-#chatbot-panel{
-  position:absolute;
-  bottom:70px;
-  right:0;
-  width:360px;
-  max-height:500px;
-  background:#1a202cfff;
-  border:1px solid rgba(232,196,106,0.3);
-  border-radius:16px;
-  box-shadow:0 10px 40px rgba(0,0,0,0.5);
-  display:flex;
-  flex-direction:column;
-  overflow:hidden;
-}
-
 /* Header */
-#chatbot-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:14px 18px;
-  background:rgba(0,0,0,0.03);
-  border-bottom:1px solid rgba(232,196,106,0.15);
-  color:var(--gold);
-  font-size:15px;
-  font-weight:600;
-}
-#chatbot-close{
-  background:none;
-  border:none;
-  color:var(--slate);
-  font-size:16px;
-  cursor:pointer;
-  padding:4px 8px;
-  border-radius:4px;
-}
-#chatbot-close:hover{
-  background:rgba(255,255,255,0.1);
-  color:#1a202c;
-}
-
 /* Messages */
-#chatbot-messages{
-  flex:1;
-  padding:14px;
-  overflow-y:auto;
-  max-height:240px;
-}
 .chat-msg{
   display:flex;
   gap:8px;
@@ -247,10 +112,6 @@ footer{background:transparent;border-top:1px solid var(--border);padding:52px 0 
 }
 
 /* Quick Questions */
-#chatbot-quick{
-  padding:10px 14px;
-  border-top:1px solid rgba(232,196,106,0.1);
-}
 .quick-title{
   font-size:15px;
   color:var(--slate);
@@ -258,79 +119,10 @@ footer{background:transparent;border-top:1px solid var(--border);padding:52px 0 
   text-transform:uppercase;
   letter-spacing:0.05em;
 }
-#chatbot-quick button{
-  display:inline-block;
-  padding:6px 12px;
-  margin:3px;
-  background:rgba(232,196,106,0.08);
-  border:1px solid rgba(0,0,0,0.1);
-  border-radius:16px;
-  color:var(--ice);
-  font-size:15px;
-  cursor:pointer;
-  transition:all .2s;
-}
-#chatbot-quick button:hover{
-  background:rgba(0,0,0,0.03);
-  border-color:var(--gold);
-  color:var(--gold);
-}
-
 /* Input */
-#chatbot-input{
-  display:flex;
-  gap:8px;
-  padding:12px 14px;
-  border-top:1px solid rgba(232,196,106,0.1);
-}
-#chatbot-input input{
-  flex:1;
-  padding:10px 14px;
-  background:rgba(255,255,255,0.9);
-  border:1px solid rgba(0,0,0,0.1);
-  border-radius:20px;
-  color:var(--ice);
-  font-size:15px;
-  outline:none;
-}
-#chatbot-input input:focus{
-  border-color:var(--gold);
-}
-#chatbot-input input::placeholder{
-  color:var(--slate);
-}
-#chatbot-input button{
-  width:40px;
-  height:40px;
-  background:linear-gradient(135deg,var(--red),var(--red-light));
-  border:none;
-  border-radius:50%;
-  color:#1a202c;
-  font-size:16px;
-  cursor:pointer;
-  transition:all .2s;
-}
-#chatbot-input button:hover{
-  transform:scale(1.05);
-}
-
 /* Responsive */
 @media(max-width:680px){
-  #chatbot-widget{
-    right:10px;
-    bottom:70px;
   }
-  #chatbot-panel{
-    width:300px;
-    right:-10px;
-  }
-  #chatbot-label{
-    display:none;
-  }
-  #chatbot-toggle{
-    padding:12px;
-  }
-}
 </style>
 
 <script>
@@ -454,13 +246,6 @@ For urgent matters, please email sale@boppfilmsale.com or call +86 18919659471.`
   }
 };
 
-function toggleChat(){
-  const panel=document.getElementById('chatbot-panel');
-  const isVisible=panel.style.display!=='none';
-  panel.style.display=isVisible?'none':'flex';
-  if(!isVisible){
-    document.getElementById('chatbot-text').focus();
-  }
 }
 
 function addMessage(text,isUser){
@@ -468,9 +253,7 @@ function addMessage(text,isUser){
   const msgDiv=document.createElement('div');
   msgDiv.className='chat-msg '+(isUser?'user':'bot');
   msgDiv.innerHTML=`
-    <div class="chat-avatar">${isUser?'👤':'🤖'}</div>
-    <div class="chat-bubble">${text}</div>
-  `;
+    <div class="chat-avatar">${isUser?'👤':'🤖'}</div><div class="chat-bubble">${text}</div>`;
   messagesDiv.appendChild(msgDiv);
   messagesDiv.scrollTop=messagesDiv.scrollHeight;
 }
@@ -505,20 +288,13 @@ function sendMessage(){
   },500+Math.random()*1000);
 }
 
-function askQuestion(type){
-  const lang=localStorage.getItem('aec-lang')||'zh';
-  const question={
-    zh:{product:'我想了解产品',price:'请提供报价',spec:'查看技术参数',order:'如何订购',contact:'联系方式'},
+,
     en:{product:'I want to know about products',price:'Please provide a quote',spec:'View technical specs',order:'How to order',contact:'Contact information'}
   };
   document.getElementById('chatbot-text').value=question[type];
   sendMessage();
 }
 
-function handleKeyPress(event){
-  if(event.key==='Enter'){
-    sendMessage();
-  }
 }
 
 // Auto-greeting after 30 seconds
